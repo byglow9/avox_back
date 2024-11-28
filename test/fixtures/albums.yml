@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nomeAlbum: MyString
+  nomeArtista: MyString
+  qtdMusicas: 1
+  dataLancamento: 2024-11-21
+
+two:
+  nomeAlbum: MyString
+  nomeArtista: MyString
+  qtdMusicas: 1
+  dataLancamento: 2024-11-21

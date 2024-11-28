@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nomeArtista: MyString
+  senhaArtista: MyString
+  qtdMusicasPublicadas: 1
+  qtdAlbunsPublicados: 1
+
+two:
+  nomeArtista: MyString
+  senhaArtista: MyString
+  qtdMusicasPublicadas: 1
+  qtdAlbunsPublicados: 1

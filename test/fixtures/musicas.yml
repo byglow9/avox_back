@@ -1,0 +1,27 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  idMusica: 1
+  nomeArtista: MyString
+  tituloMusica: MyString
+  duracaoMusica: 2024-11-21 05:57:13
+  generoMusica: MyString
+  dataLancamento: 2024-11-21
+  qtdEnvolvidos: 1
+  nomesEnvolvidos: MyString
+  qtdReproducoes: 1
+  referenciaAlbum: MyString
+  letraMusica: MyString
+
+two:
+  idMusica: 1
+  nomeArtista: MyString
+  tituloMusica: MyString
+  duracaoMusica: 2024-11-21 05:57:13
+  generoMusica: MyString
+  dataLancamento: 2024-11-21
+  qtdEnvolvidos: 1
+  nomesEnvolvidos: MyString
+  qtdReproducoes: 1
+  referenciaAlbum: MyString
+  letraMusica: MyString

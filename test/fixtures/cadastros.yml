@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  dataCadastro: 2024-11-21
+  metodoCadastro: MyString
+
+two:
+  dataCadastro: 2024-11-21
+  metodoCadastro: MyString

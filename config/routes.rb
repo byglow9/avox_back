@@ -1,3 +1,33 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  mount Rswag::Ui::Engine => '/api-docs'
+  mount Rswag::Api::Engine => '/api-docs'
+  # Autenticação Devise
+  devise_for :usuarios, controllers: {
+    sessions: 'usuarios/sessions',
+    registrations: 'usuarios/registrations',
+    passwords: 'usuarios/passwords'
+  }
+
+  # Perfil do usuário autenticado
+  resource :usuario, only: [:show, :update]
+
+  # CRUD completo para recursos principais
+  resources :musicas
+  resources :playlists
+  resources :generos
+  resources :albuns
+  resources :artistas
+
+  # Ações específicas para favoritos e músicas em playlists
+  resources :favoritos, only: [:index, :create, :destroy]
+  resources :playlist_musicas, only: [:create, :destroy]
+
+  # Autenticação personalizada
+  namespace :users do
+    post 'sign_in', to: 'sessions#create'
+    delete 'sign_out', to: 'sessions#destroy'
+  end
+
+  # Rota raiz da API
+  root to: proc { [200, {}, ['API is running']] }
 end
