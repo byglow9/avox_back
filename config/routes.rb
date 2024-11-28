@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   }
 
   # Perfil do usuário autenticado
-  resource :usuario, only: [:show, :update]
+  resource :usuarios, only: [:show, :update]
 
   # CRUD completo para recursos principais
   resources :musicas
